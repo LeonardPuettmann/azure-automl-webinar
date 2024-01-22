@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:data/mltable/MLTable
+=======
+<<<<<<< HEAD:data/train/MLTable
 paths:
 - file: train.csv
 transformations:
@@ -13,6 +16,23 @@ transformations:
     path_column: Path
     support_multi_line: false
 type: mltable
+=======
+>>>>>>> 95ea3af2a0fdd8835540d5aaa7564b3b85dbd11e
+paths:
+- file: train.csv
+transformations:
+- read_delimited:
+    delimiter: ','
+    empty_as_string: false
+    encoding: utf8
+    header: all_files_same_headers
+    include_path_column: false
+    infer_column_types: true
+    partition_size: 20971520
+    path_column: Path
+    support_multi_line: false
+type: mltable
+<<<<<<< HEAD
 =======
 paths:
 - file: train.csv
@@ -29,3 +49,6 @@ transformations:
     support_multi_line: false
 type: mltable
 >>>>>>> 68d2612c94cc5d6798d1658c9847402171bda245:data/train/MLTable
+=======
+>>>>>>> 396a19c3d0b1f85320860b3efd4bbc5ce1c6cd34:data/mltable/MLTable
+>>>>>>> 95ea3af2a0fdd8835540d5aaa7564b3b85dbd11e
